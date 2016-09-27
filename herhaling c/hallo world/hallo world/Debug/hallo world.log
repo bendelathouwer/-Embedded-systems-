@@ -1,0 +1,4 @@
+﻿  hallo_world.c
+c:\users\ecto1\documents\github\-embedded-systems-\hallo world\hallo world\hallo_world.c(7): warning C4098: 'main': 'void' function returning a value
+  hallo world.vcxproj -> C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\hallo world\Debug\hallo world.exe
+  hallo world.vcxproj -> C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\hallo world\Debug\hallo world.pdb (Full PDB)

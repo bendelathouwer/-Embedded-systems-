@@ -1,0 +1,5 @@
+﻿  Oef2.c
+c:\users\ecto1\documents\github\-embedded-systems-\oef 2\oef 2\oef2.c(12): warning C4013: 'gets' undefined; assuming extern returning int
+c:\users\ecto1\documents\github\-embedded-systems-\oef 2\oef 2\oef2.c(27): warning C4098: 'main': 'void' function returning a value
+  Oef 2.vcxproj -> C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Oef 2\Debug\Oef 2.exe
+  Oef 2.vcxproj -> C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Oef 2\Debug\Oef 2.pdb (Full PDB)

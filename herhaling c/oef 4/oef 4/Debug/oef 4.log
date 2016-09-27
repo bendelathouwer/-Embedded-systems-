@@ -1,0 +1,7 @@
+﻿  oef 4.c
+c:\users\ecto1\documents\github\-embedded-systems-\herhaling c\oef 4\oef 4\oef 4.c(10): warning C4013: 'gets' undefined; assuming extern returning int
+c:\users\ecto1\documents\github\-embedded-systems-\herhaling c\oef 4\oef 4\oef 4.c(11): warning C4047: 'function': 'char' differs in levels of indirection from 'char [200]'
+c:\users\ecto1\documents\github\-embedded-systems-\herhaling c\oef 4\oef 4\oef 4.c(11): warning C4024: 'To_u': different types for formal and actual parameter 1
+c:\users\ecto1\documents\github\-embedded-systems-\herhaling c\oef 4\oef 4\oef 4.c(19): warning C4047: 'function': 'const char *' differs in levels of indirection from 'int'
+c:\users\ecto1\documents\github\-embedded-systems-\herhaling c\oef 4\oef 4\oef 4.c(19): warning C4024: 'strlen': different types for formal and actual parameter 1
+c:\users\ecto1\documents\github\-embedded-systems-\herhaling c\oef 4\oef 4\oef 4.c(23): error C2109: subscript requires array or pointer type

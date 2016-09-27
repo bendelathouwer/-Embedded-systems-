@@ -1,0 +1,4 @@
+﻿  oef3.c
+c:\users\ecto1\documents\github\-embedded-systems-\herhaling c\oef3\oef3\oef3\oef3.c(9): warning C4013: 'gets' undefined; assuming extern returning int
+  Oef3.vcxproj -> C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\herhaling c\oef3\Oef3\Debug\Oef3.exe
+  Oef3.vcxproj -> C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\herhaling c\oef3\Oef3\Debug\Oef3.pdb (Full PDB)
