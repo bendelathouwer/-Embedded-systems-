@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/IC:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\labo2\cmsis /IC:\Users\Ecto1\Documents\GitHub\-Embedded-systems- /IC:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\labo2 /IC:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\labo2\lm3slib /IC:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\labo2\lm3slib\driverlib /IC:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\labo2\lm3slib\inc">
+      <source file="..\..\..\lm3slib\inc\hw_memmap.h" lastModified="1579efc2a75">
+      </source>
+      <source file="..\..\..\lm3slib\driverlib\cpu.h" lastModified="1579efc2ab5">
+      </source>
+      <source file="..\..\..\lm3slib\inc\hw_ints.h" lastModified="1579efc2aa5">
+      </source>
+      <source file="..\..\..\lm3slib\driverlib\cpu.c" lastModified="1579efc2ab1">
+         <include file="..\..\..\lm3slib\driverlib\cpu.h"/>
+      </source>
+      <source file="..\..\..\lm3slib\driverlib\gpio.h" lastModified="157c30b3c0a">
+      </source>
+      <source file="..\..\..\lm3slib\inc\hw_gpio.h" lastModified="1579efc2a54">
+      </source>
+      <source file="..\..\..\lm3slib\inc\hw_nvic.h" lastModified="1579efc2aa9">
+      </source>
+      <source file="..\..\..\lm3slib\driverlib\debug.h" lastModified="1579efc2a62">
+      </source>
+      <source file="..\..\..\lm3slib\driverlib\sysctl.h" lastModified="1579efc2ac7">
+      </source>
+      <source file="..\..\..\lm3slib\inc\hw_sysctl.h" lastModified="1579efc2acb">
+      </source>
+      <source file="..\..\..\startup\startup_lm3s.c" lastModified="1579efc2a9a">
+      </source>
+      <source file="..\..\..\lm3slib\driverlib\interrupt.h" lastModified="1579efc2aa1">
+      </source>
+      <source file="..\..\..\lm3slib\driverlib\gpio.c" lastModified="1579efc2a4a">
+         <include file="..\..\..\lm3slib\inc\hw_gpio.h"/>
+         <include file="..\..\..\lm3slib\inc\hw_ints.h"/>
+         <include file="..\..\..\lm3slib\inc\hw_memmap.h"/>
+         <include file="..\..\..\lm3slib\inc\hw_sysctl.h"/>
+         <include file="..\..\..\lm3slib\inc\hw_types.h"/>
+         <include file="..\..\..\lm3slib\driverlib\debug.h"/>
+         <include file="..\..\..\lm3slib\driverlib\gpio.h"/>
+         <include file="..\..\..\lm3slib\driverlib\interrupt.h"/>
+      </source>
+      <source file="..\..\..\lm3slib\inc\hw_types.h" lastModified="1579efc2a76">
+      </source>
+      <source file="..\..\..\lm3slib\driverlib\sysctl.c" lastModified="1579efc2ac2">
+         <include file="..\..\..\lm3slib\inc\hw_ints.h"/>
+         <include file="..\..\..\lm3slib\inc\hw_nvic.h"/>
+         <include file="..\..\..\lm3slib\inc\hw_sysctl.h"/>
+         <include file="..\..\..\lm3slib\inc\hw_types.h"/>
+         <include file="..\..\..\lm3slib\driverlib\cpu.h"/>
+         <include file="..\..\..\lm3slib\driverlib\debug.h"/>
+         <include file="..\..\..\lm3slib\driverlib\interrupt.h"/>
+         <include file="..\..\..\lm3slib\driverlib\sysctl.h"/>
+      </source>
+      <source file="..\..\..\lm3slib\driverlib\interrupt.c" lastModified="1579efc2aa0">
+         <include file="..\..\..\lm3slib\inc\hw_ints.h"/>
+         <include file="..\..\..\lm3slib\inc\hw_nvic.h"/>
+         <include file="..\..\..\lm3slib\inc\hw_types.h"/>
+         <include file="..\..\..\lm3slib\driverlib\cpu.h"/>
+         <include file="..\..\..\lm3slib\driverlib\debug.h"/>
+         <include file="..\..\..\lm3slib\driverlib\interrupt.h"/>
+      </source>
+   </includePath>
+</dependencies>
