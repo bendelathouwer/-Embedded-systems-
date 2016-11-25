@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="S">
+<includepath>Inc</includepath>
+<includepath>Drivers/STM32F7xx_HAL_Driver/Inc</includepath>
+<includepath>Drivers/STM32F7xx_HAL_Driver/Inc/Legacy</includepath>
+<includepath>Drivers/CMSIS/Include</includepath>
+<includepath>Drivers/CMSIS/Device/ST/STM32F7xx/Include</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\GUI</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\GUI\inc</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\inc</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\src</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\Common</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\Components</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\Components\ft5336</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\Components\rk043fn48h</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\Utilities</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\Utilities\Fonts</includepath>
+<includepath workspace_path="true">/ProjectV2/GUI/inc</includepath>
+<includepath workspace_path="true">/ProjectV2/Drivers/BSP/inc</includepath>
+
+</language>
+<language name="C Source File">
+<includepath>Inc</includepath>
+<includepath>Drivers/STM32F7xx_HAL_Driver/Inc</includepath>
+<includepath>Drivers/STM32F7xx_HAL_Driver/Inc/Legacy</includepath>
+<includepath>Drivers/CMSIS/Include</includepath>
+<includepath>Drivers/CMSIS/Device/ST/STM32F7xx/Include</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\GUI</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\GUI\inc</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\inc</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\src</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\Common</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\Components</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\Components\ft5336</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\Components\rk043fn48h</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\Utilities</includepath>
+<includepath>C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\EmbeddedProject\Drivers\BSP\Utilities\Fonts</includepath>
+<includepath workspace_path="true">/ProjectV2/GUI/inc</includepath>
+<includepath workspace_path="true">/ProjectV2/Drivers/BSP/inc</includepath>
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+<includepath>Debug/</includepath>
+
+</language>
+<language name="s">
+<includepath>Debug/</includepath>
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="S">
+<macro>
+<name>__weak</name><value>"__attribute__((weak))"</value>
+</macro>
+<macro>
+<name>__packed</name><value>"__attribute__((__packed__))"</value>
+</macro>
+<macro>
+<name>USE_HAL_DRIVER</name><value/>
+</macro>
+<macro>
+<name>STM32F746xx</name><value/>
+</macro>
+
+</language>
+<language name="C Source File">
+<macro>
+<name>__weak</name><value>"__attribute__((weak))"</value>
+</macro>
+<macro>
+<name>__packed</name><value>"__attribute__((__packed__))"</value>
+</macro>
+<macro>
+<name>USE_HAL_DRIVER</name><value/>
+</macro>
+<macro>
+<name>STM32F746xx</name><value/>
+</macro>
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+<language name="s">
+
+</language>
+</section>
+</cdtprojectproperties>

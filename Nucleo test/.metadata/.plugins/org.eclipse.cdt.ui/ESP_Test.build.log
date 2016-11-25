@@ -1,0 +1,38 @@
+11:04:30 **** Incremental Build of configuration Debug for project ESP_Test ****
+Info: Internal Builder is used for build
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F746xx -I../Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Inc -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -o "Src\\main.o" "..\\Src\\main.c" 
+..\Src\main.c: In function 'TestModule':
+..\Src\main.c:225:33: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart4,AT_C,strlen(AT_C),HAL_MAX_DELAY);
+                                 ^
+..\Src\main.c:225:33: warning: incompatible implicit declaration of built-in function 'strlen'
+..\Src\main.c:225:33: note: include '<string.h>' or provide a declaration of 'strlen'
+..\Src\main.c:225:40: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  HAL_UART_Transmit(&huart4,AT_C,strlen(AT_C),HAL_MAX_DELAY);
+                                        ^
+..\Src\main.c:225:40: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+..\Src\main.c:230:11: warning: comparison between pointer and integer
+  }while(x != NULL);
+           ^
+..\Src\main.c:232:5: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+  if(strcmp(response,"OK")==0)
+     ^
+..\Src\main.c: In function 'GetcurentMode':
+..\Src\main.c:255:33: warning: incompatible implicit declaration of built-in function 'strlen'
+  HAL_UART_Transmit(&huart4,AT_C,strlen(AT_C),HAL_MAX_DELAY);
+                                 ^
+..\Src\main.c:255:33: note: include '<string.h>' or provide a declaration of 'strlen'
+..\Src\main.c:255:40: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  HAL_UART_Transmit(&huart4,AT_C,strlen(AT_C),HAL_MAX_DELAY);
+                                        ^
+..\Src\main.c:255:40: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+..\Src\main.c:259:3: error: 'response' undeclared (first use in this function)
+   response[i++]=x;
+   ^
+..\Src\main.c:259:3: note: each undeclared identifier is reported only once for each function it appears in
+..\Src\main.c:260:11: warning: comparison between pointer and integer
+  }while(x != NULL);
+           ^
+
+11:04:30 Build Finished (took 154ms)
+
