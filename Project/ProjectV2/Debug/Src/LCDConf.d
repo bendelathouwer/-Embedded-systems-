@@ -28,7 +28,6 @@ Src/LCDConf.o: ../Src/LCDConf.c \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma2d.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dcmi.h \
- C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sdram.h \
@@ -43,7 +42,6 @@ Src/LCDConf.o: ../Src/LCDConf.c \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rtc_ex.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sai.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spdifrx.h \
- C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
@@ -125,8 +123,6 @@ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM
 
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dcmi.h:
 
-C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h:
-
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:
 
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:
@@ -154,8 +150,6 @@ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sai.h:
 
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spdifrx.h:
-
-C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h:
 
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:
 

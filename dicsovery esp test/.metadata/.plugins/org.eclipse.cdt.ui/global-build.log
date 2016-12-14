@@ -1,0 +1,20 @@
+19:46:23 **** Incremental Build of configuration Debug for project ESP TEST ****
+make all 
+'Building file: ../Src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\dicsovery esp test\ESP TEST\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/dicsovery esp test/ESP TEST/Inc" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/dicsovery esp test/ESP TEST/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/dicsovery esp test/ESP TEST/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/dicsovery esp test/ESP TEST/Drivers/CMSIS/Include" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/dicsovery esp test/ESP TEST/Drivers/CMSIS/Device/ST/STM32F7xx/Include"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+'Finished building: ../Src/main.c'
+' '
+'Building target: ESP TEST.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F746NGHx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "ESP TEST.elf" @"objects.list"  
+'Finished building target: ESP TEST.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "ESP TEST.elf" "ESP TEST.bin"
+arm-none-eabi-size "ESP TEST.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6628	     12	   1684	   8324	   2084	ESP TEST.elf
+' '

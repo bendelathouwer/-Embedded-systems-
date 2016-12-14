@@ -1,0 +1,47 @@
+Configuration	ESP TEST
+STM32CubeMX 	4.16.1
+Date	11/27/2016
+MCU	STM32F746NGHx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+UART7	Asynchronous	UART7_RX	PF6
+UART7	Asynchronous	UART7_TX	PF7
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+K1	PF7	UART7_TX	
+K2	PF6	UART7_RX	
+L2	PF9	GPIO_Output	LED
+L3	PF8	GPIO_Output	Enable
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : ESP TEST
+Project Folder : C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\dicsovery esp test\ESP TEST
+Toolchain / IDE : SW4STM32
+Firmware Package Name and Version : STM32Cube FW_F7 V1.4.1
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripherals : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+

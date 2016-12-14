@@ -27,7 +27,6 @@ Drivers/BSP/src/stm32746g_discovery_lcd.o: \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma2d.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dcmi.h \
- C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sdram.h \
@@ -42,7 +41,6 @@ Drivers/BSP/src/stm32746g_discovery_lcd.o: \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rtc_ex.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sai.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spdifrx.h \
- C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
@@ -50,7 +48,14 @@ Drivers/BSP/src/stm32746g_discovery_lcd.o: \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_hcd.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_usb.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/inc/stm32746g_discovery.h \
- c:\users\ecto1\documents\github\-embedded-systems-\project\projectv2\drivers\bsp\utilities\fonts\fonts.h
+ c:\users\ecto1\documents\github\-embedded-systems-\project\projectv2\drivers\bsp\utilities\fonts\fonts.h \
+ ../Drivers/BSP/src/../Utilities/Fonts/fonts.h \
+ ../Drivers/BSP/src/../Utilities/Fonts/font24.c \
+ ../Drivers/BSP/src/../Utilities/Fonts/fonts.h \
+ ../Drivers/BSP/src/../Utilities/Fonts/font20.c \
+ ../Drivers/BSP/src/../Utilities/Fonts/font16.c \
+ ../Drivers/BSP/src/../Utilities/Fonts/font12.c \
+ ../Drivers/BSP/src/../Utilities/Fonts/font8.c
 
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/inc/stm32746g_discovery_lcd.h:
 
@@ -106,8 +111,6 @@ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM
 
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dcmi.h:
 
-C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h:
-
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:
 
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:
@@ -136,8 +139,6 @@ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM
 
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spdifrx.h:
 
-C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h:
-
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:
 
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:
@@ -153,3 +154,17 @@ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/inc/stm32746g_discovery.h:
 
 c:\users\ecto1\documents\github\-embedded-systems-\project\projectv2\drivers\bsp\utilities\fonts\fonts.h:
+
+../Drivers/BSP/src/../Utilities/Fonts/fonts.h:
+
+../Drivers/BSP/src/../Utilities/Fonts/font24.c:
+
+../Drivers/BSP/src/../Utilities/Fonts/fonts.h:
+
+../Drivers/BSP/src/../Utilities/Fonts/font20.c:
+
+../Drivers/BSP/src/../Utilities/Fonts/font16.c:
+
+../Drivers/BSP/src/../Utilities/Fonts/font12.c:
+
+../Drivers/BSP/src/../Utilities/Fonts/font8.c:

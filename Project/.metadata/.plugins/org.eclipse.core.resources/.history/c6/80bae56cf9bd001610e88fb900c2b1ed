@@ -1,0 +1,12 @@
+/*
+ * PCF8523.h
+ *
+ *  Created on: Dec 9, 2016
+ *      Author: Ecto1
+ */
+
+#ifndef PCF8523_H_
+#define PCF8523_H_
+void vI2cConfig( void );
+
+#endif /* PCF8523_H_ */

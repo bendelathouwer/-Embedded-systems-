@@ -139,8 +139,8 @@
 #define SDMMC_CMD_GPIO_Port GPIOD
 #define TP3_Pin GPIO_PIN_15
 #define TP3_GPIO_Port GPIOH
-#define ARDUINO_SCK_D13_Pin GPIO_PIN_1
-#define ARDUINO_SCK_D13_GPIO_Port GPIOI
+#define LED_Pin GPIO_PIN_1
+#define LED_GPIO_Port GPIOI
 #define OTG_FS_ID_Pin GPIO_PIN_10
 #define OTG_FS_ID_GPIO_Port GPIOA
 #define LCD_DISP_Pin GPIO_PIN_12
@@ -157,8 +157,6 @@
 #define LCD_G6_GPIO_Port GPIOK
 #define LCD_G7_Pin GPIO_PIN_2
 #define LCD_G7_GPIO_Port GPIOK
-#define ARDUINO_PWM_D5_Pin GPIO_PIN_8
-#define ARDUINO_PWM_D5_GPIO_Port GPIOA
 #define OSC_25M_Pin GPIO_PIN_0
 #define OSC_25M_GPIO_Port GPIOH
 #define LCD_INT_Pin GPIO_PIN_13
@@ -203,10 +201,8 @@
 #define FMC_D15_GPIO_Port GPIOD
 #define ENABLE_Pin GPIO_PIN_10
 #define ENABLE_GPIO_Port GPIOF
-#define LED_Pin GPIO_PIN_9
-#define LED_GPIO_Port GPIOF
-#define ARDUINO_A3_Pin GPIO_PIN_8
-#define ARDUINO_A3_GPIO_Port GPIOF
+#define LAOUT_Pin GPIO_PIN_8
+#define LAOUT_GPIO_Port GPIOF
 #define FMC_D0_Pin GPIO_PIN_14
 #define FMC_D0_GPIO_Port GPIOD
 #define ULPI_D5_Pin GPIO_PIN_12

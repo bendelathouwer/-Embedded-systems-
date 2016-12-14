@@ -23,7 +23,6 @@ Src/main.o: ../Src/main.c \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma2d.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dcmi.h \
- C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sdram.h \
@@ -38,13 +37,29 @@ Src/main.o: ../Src/main.c \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rtc_ex.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sai.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spdifrx.h \
- C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
  C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_hcd.h \
- C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_usb.h
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_usb.h \
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Inc/main.h \
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/inc/stm32746g_discovery_lcd.h \
+ c:\users\ecto1\documents\github\-embedded-systems-\project\projectv2\drivers\bsp\components\rk043fn48h\rk043fn48h.h \
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/inc/stm32746g_discovery_sdram.h \
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/inc/stm32746g_discovery.h \
+ c:\users\ecto1\documents\github\-embedded-systems-\project\projectv2\drivers\bsp\utilities\fonts\fonts.h \
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/GUI.h \
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/GUI_ConfDefaults.h \
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Inc/GUIConf.h \
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/GUI_Type.h \
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/LCD.h \
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/Global.h \
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/GUI_Version.h \
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/WM.h \
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/WM_GUI.h \
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/GUI.h \
+ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Inc/ESP8266.h
 
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 
@@ -94,8 +109,6 @@ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM
 
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dcmi.h:
 
-C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h:
-
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:
 
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:
@@ -124,8 +137,6 @@ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM
 
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spdifrx.h:
 
-C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h:
-
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:
 
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:
@@ -137,3 +148,37 @@ C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_hcd.h:
 
 C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_usb.h:
+
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Inc/main.h:
+
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/inc/stm32746g_discovery_lcd.h:
+
+c:\users\ecto1\documents\github\-embedded-systems-\project\projectv2\drivers\bsp\components\rk043fn48h\rk043fn48h.h:
+
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/inc/stm32746g_discovery_sdram.h:
+
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/inc/stm32746g_discovery.h:
+
+c:\users\ecto1\documents\github\-embedded-systems-\project\projectv2\drivers\bsp\utilities\fonts\fonts.h:
+
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/GUI.h:
+
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/GUI_ConfDefaults.h:
+
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Inc/GUIConf.h:
+
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/GUI_Type.h:
+
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/LCD.h:
+
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/Global.h:
+
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/GUI_Version.h:
+
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/WM.h:
+
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/WM_GUI.h:
+
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc/GUI.h:
+
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Inc/ESP8266.h:

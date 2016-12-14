@@ -1,27 +1,6 @@
-19:58:50 **** Incremental Build of configuration Debug for project ProjectV2 ****
+14:28:08 **** Incremental Build of configuration Debug for project ProjectV2 ****
 make all 
-'Building file: ../Src/main.c'
-'Invoking: MCU GCC Compiler'
-C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\Project\ProjectV2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Inc" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/CMSIS/Include" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/inc" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/GUI/lib" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/inc" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/src" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/Components" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/Components/ft5336" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/Components/rk043fn48h" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/Utilities" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/Project/ProjectV2/Drivers/BSP/Utilities/Fonts"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
-../Src/main.c: In function 'main':
-../Src/main.c:180:3: warning: implicit declaration of function 'GUI_Init' [-Wimplicit-function-declaration]
-   GUI_Init();
-   ^
-../Src/main.c:181:3: warning: implicit declaration of function 'GUI_Clear' [-Wimplicit-function-declaration]
-   GUI_Clear();
-   ^
-../Src/main.c:182:3: warning: implicit declaration of function 'GUI_SetFont' [-Wimplicit-function-declaration]
-   GUI_SetFont(&GUI_Font16_HK);
-   ^
-../Src/main.c:182:16: error: 'GUI_Font16_HK' undeclared (first use in this function)
-   GUI_SetFont(&GUI_Font16_HK);
-                ^
-../Src/main.c:182:16: note: each undeclared identifier is reported only once for each function it appears in
-../Src/main.c:183:3: warning: implicit declaration of function 'GUI_DispString' [-Wimplicit-function-declaration]
-   GUI_DispString("Everything works fine");
-   ^
-make: *** [Src/main.o] Error 1
+make: Nothing to be done for `all'.
 
-19:58:50 Build Finished (took 536ms)
+14:28:08 Build Finished (took 342ms)
 
