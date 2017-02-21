@@ -5,6 +5,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Src/ESP8266.c \
+../Src/FramewinDLG.c \
 ../Src/GUIConf.c \
 ../Src/GUI_X.c \
 ../Src/LCDConf.c \
@@ -14,6 +15,7 @@ C_SRCS += \
 
 OBJS += \
 ./Src/ESP8266.o \
+./Src/FramewinDLG.o \
 ./Src/GUIConf.o \
 ./Src/GUI_X.o \
 ./Src/LCDConf.o \
@@ -23,6 +25,7 @@ OBJS += \
 
 C_DEPS += \
 ./Src/ESP8266.d \
+./Src/FramewinDLG.d \
 ./Src/GUIConf.d \
 ./Src/GUI_X.d \
 ./Src/LCDConf.d \
