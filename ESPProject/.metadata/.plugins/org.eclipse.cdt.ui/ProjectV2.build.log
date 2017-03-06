@@ -1,6 +1,118 @@
-12:25:39 **** Incremental Build of configuration Debug for project ProjectV2 ****
+10:58:24 **** Incremental Build of configuration Debug for project ProjectV2 ****
 make all 
-make: Nothing to be done for `all'.
+'Building file: ../Src/ESP8266.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPProject\ProjectV2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Inc" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/CMSIS/Include" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/GUI" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/GUI/inc" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/GUI/lib" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/inc" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/src" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/Common" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/Components" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/Components/ft5336" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/Components/rk043fn48h" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/Utilities" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/Utilities/Fonts"  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/ESP8266.d" -MT"Src/ESP8266.o" -o "Src/ESP8266.o" "../Src/ESP8266.c"
+../Src/ESP8266.c: In function 'vTestModulle':
+../Src/ESP8266.c:33:41: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart7,usTestComand,strlen(usTestComand),0);
+                                         ^
+../Src/ESP8266.c:33:41: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/ESP8266.c:33:41: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/ESP8266.c:33:48: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  HAL_UART_Transmit(&huart7,usTestComand,strlen(usTestComand),0);
+                                                ^
+../Src/ESP8266.c:33:48: note: expected 'const char *' but argument is of type 'int8_t * {aka signed char *}'
+../Src/ESP8266.c:33:28: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_UART_Transmit(&huart7,usTestComand,strlen(usTestComand),0);
+                            ^
+In file included from C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Inc/stm32f7xx_hal_conf.h:383:0,
+                 from C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../Src/ESP8266.c:11:
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1139:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int8_t * {aka signed char *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^
+../Src/ESP8266.c:35:44: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  HAL_UART_Receive(&huart7,ESPBuffer,strlen(ESPBuffer),0);
+                                            ^
+../Src/ESP8266.c:35:44: note: expected 'const char *' but argument is of type 'int8_t * {aka signed char *}'
+../Src/ESP8266.c:35:27: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive' differ in signedness [-Wpointer-sign]
+  HAL_UART_Receive(&huart7,ESPBuffer,strlen(ESPBuffer),0);
+                           ^
+In file included from C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Inc/stm32f7xx_hal_conf.h:383:0,
+                 from C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../Src/ESP8266.c:11:
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1140:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int8_t * {aka signed char *}'
+ HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^
+../Src/ESP8266.c: In function 'vResetModulle':
+../Src/ESP8266.c:45:43: warning: incompatible implicit declaration of built-in function 'strlen'
+   HAL_UART_Transmit(&huart7,usResetComand,strlen(usResetComand),0);
+                                           ^
+../Src/ESP8266.c:45:43: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/ESP8266.c:45:50: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   HAL_UART_Transmit(&huart7,usResetComand,strlen(usResetComand),0);
+                                                  ^
+../Src/ESP8266.c:45:50: note: expected 'const char *' but argument is of type 'int8_t * {aka signed char *}'
+../Src/ESP8266.c:45:29: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   HAL_UART_Transmit(&huart7,usResetComand,strlen(usResetComand),0);
+                             ^
+In file included from C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Inc/stm32f7xx_hal_conf.h:383:0,
+                 from C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../Src/ESP8266.c:11:
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1139:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int8_t * {aka signed char *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^
+../Src/ESP8266.c: In function 'iSetRFPower':
+../Src/ESP8266.c:60:34: warning: incompatible implicit declaration of built-in function 'strlen'
+   HAL_UART_Transmit(&huart7,Cstr,strlen(Cstr),0);
+                                  ^
+../Src/ESP8266.c:60:34: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/ESP8266.c:60:29: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   HAL_UART_Transmit(&huart7,Cstr,strlen(Cstr),0);
+                             ^
+In file included from C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Inc/stm32f7xx_hal_conf.h:383:0,
+                 from C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../Src/ESP8266.c:11:
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1139:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^
+../Src/ESP8266.c: In function 'Vsleep':
+../Src/ESP8266.c:73:33: warning: incompatible implicit declaration of built-in function 'strlen'
+  HAL_UART_Transmit(&huart7,Cstr,strlen(Cstr),0);
+                                 ^
+../Src/ESP8266.c:73:33: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/ESP8266.c:73:28: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_UART_Transmit(&huart7,Cstr,strlen(Cstr),0);
+                            ^
+In file included from C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Inc/stm32f7xx_hal_conf.h:383:0,
+                 from C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:48,
+                 from ../Src/ESP8266.c:11:
+C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1139:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^
+../Src/ESP8266.c: In function 'iSetRFPower':
+../Src/ESP8266.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../Src/ESP8266.c'
+' '
+'Building file: ../Src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPProject\ProjectV2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Inc" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/CMSIS/Include" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/GUI" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/GUI/inc" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/GUI/lib" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/inc" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/src" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/Common" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/Components" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/Components/ft5336" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/Components/rk043fn48h" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/Utilities" -I"C:/Users/Ecto1/Documents/GitHub/-Embedded-systems-/ESPProject/ProjectV2/Drivers/BSP/Utilities/Fonts"  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:135:11: warning: unused variable 'ulCounter' [-Wunused-variable]
+  uint32_t ulCounter = 480 ;
+           ^
+../Src/main.c:134:11: warning: unused variable 'ulGraphValues' [-Wunused-variable]
+  uint16_t ulGraphValues [480];
+           ^
+'Finished building: ../Src/main.c'
+' '
+'Building target: ProjectV2.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -L"C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPProject\ProjectV2\GUI\lib" -specs=nosys.specs -specs=nano.specs -T"../STM32F746NGHx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "ProjectV2.elf" @"objects.list"  -l:STemWin528_CM7_GCC.a
+'Finished building target: ProjectV2.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "ProjectV2.elf" "ProjectV2.bin"
+arm-none-eabi-size "ProjectV2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  74380	     40	 159480	 233900	  391ac	ProjectV2.elf
+' '
 
-12:25:39 Build Finished (took 337ms)
+10:58:26 Build Finished (took 2s.303ms)
 

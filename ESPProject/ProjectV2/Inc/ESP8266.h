@@ -14,14 +14,14 @@
 //showing that there is activety
 void vActivety( void );
 
-//recieving data
-void RecieveData( void );
 
-//sending data
-void  SendData( void );
+//testing the module
+void vTestModulle (void);
 
-//decoding of serial mesages
-void ParseData( char* );
+void vResetModulle ( int iReset   );
 
+void vSleep (int iSleepMode);
+
+int iSetRFPower( int ipower );
 
 #endif /* ESP8266_H_ */

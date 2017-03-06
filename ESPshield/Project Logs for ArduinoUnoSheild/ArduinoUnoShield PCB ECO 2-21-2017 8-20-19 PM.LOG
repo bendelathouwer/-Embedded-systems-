@@ -1,0 +1,13 @@
+Added Component: Designator=C1(Capacitor trough hole)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C2(0805 capacitor)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C3(0805 capacitor)
+Add component. Clean all parameters for all variants
+Added Component: Designator=IC*(ESP8266 ESP-01)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=AD4 Pin=IC*-1
+Added Pin To Net: NetName=3V3 Pin=IC*-2
+Added Pin To Net: NetName=AD1 Pin=IC*-6
+Added Pin To Net: NetName=GND Pin=IC*-7
+Added Pin To Net: NetName=AD5 Pin=IC*-8

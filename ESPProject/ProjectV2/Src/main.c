@@ -133,8 +133,7 @@ int main(void)
   /* USER CODE BEGIN 1 */
 	uint16_t ulGraphValues [480];
 	uint32_t ulCounter = 480 ;
-	char ESPBuffer [6];// serial buffer lenght
-	uint8_t usGoComand[480] = "AT/r/n";/// verandert niet
+
 	// calloc doet niets aka output komt niet op scherm
 //	char* ESPBuffer;// serial buffer lenght
 //	ESPBuffer = ( char* )calloc(*ESPBuffer, sizeof (char));
@@ -207,9 +206,7 @@ int main(void)
   GUI_DispDec(fMidY,3);
   GUI_DispString("\n");
 
-  HAL_UART_Transmit(&huart7,usGoComand,strlen(usGoComand),0);
-  HAL_Delay(2);
-  HAL_UART_Receive(&huart7,ESPBuffer,strlen(ESPBuffer),0);
+
   /*if(ESPBuffer == usGoComand)
   {
 	  for (int x = 0 ; x <strlen(ESPBuffer) ; x++ )
@@ -222,7 +219,7 @@ int main(void)
 	  HAL_UART_Receive(&huart7,*ESPBuffer,strlen(ESPBuffer),0);
 
   }*/
-  GUI_DispString(ESPBuffer);
+//  GUI_DispString(ESPBuffer);
 
   /*GUI_SetBkColor(GUI_BLACK);
   GUI_Clear();
@@ -246,7 +243,7 @@ int main(void)
 
 	  GUI_Clear();
 	  GUI_DispString("grafiek:\n");
-	  GUI_DrawHLine( fMidY , 0 ,fBounderyX );
+	  GUI_Drawo7Line( fMidY , 0 ,fBounderyX );
 	  for( ulCounter = 0 ; ulCounter < GUI_COUNTOF(ulGraphValues) ; ulCounter++ )
 	    {
 

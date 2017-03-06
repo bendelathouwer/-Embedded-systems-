@@ -1,0 +1,356 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD17\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2/28/2017</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">9:28:28 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc" class="file"><acronym title="C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc">C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">8</td></tr>
+</table>
+</td>
+</table><a name="IDCWJKGJBGOCUWCROTUVENU142EBDYLXEOELXZRTHK4HKBR1OS0LGL"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKBN3Y5W53RFEPROV10LJZF4WZFAZ4BQBAFDTPSEU510GOIM0DE4K">Clearance Constraint (Gap=0.102mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWUMBDEVKGZZSPPIRYQOF5HXPGMTLJPF3XE4IMHLPT4KIUURKBQWP">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDP53TVSFKDNGUDFRZKMLLXP03LHXVQ3GPWSIFSIOD2OJVJJNZYAIO">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQVEUZPRXEAEJGVGBFRUWKFYLVKRYQU2Q41Q5IEGDJNIIJEUA1F5G">Width Constraint (Min=0.102mm) (Max=1.27mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWREKNCTF5QV3OKWFLIUNQH400GV1FK5JQNGVWUCS0YQMHAMZMFBC">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDSVDUDYRXCSXWDKOSBXTEN0LBXN5XMXGQROWIPCOHCPPUPJ0CCZLC">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPF4TX4QTY55RCNM2LPZYBOOXVB0QJQHEUAZJDIN2LRFCLAFL3RWE">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUIB3CWCTOIPGKNYRVGUPHSNZJBAMB0UQMTABULM0ZRW2Y0MXLSKL">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJDNLRY20AM5YPWHKEASN1D1CWPULQYDU5Y4VHZCUJFL3D0UU2NIB">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQVOSVLSY135DPOWHHQKIGPDJRXGMG5YU15ROWP4Q5UDHKK5V3YJ">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDS5NI3SRAZRCCHREBQZNDGHRX2DRAQUFQR1Q3PPNYCM33RHSLOXP">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBBWCJHXMUW3LLDPJQ4BXCA2YNISJ41TRPF2ZPZEDIL5AQE4LJ4WJ">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">8</td>
+</tr>
+</table><br><a name="IDSVDUDYRXCSXWDKOSBXTEN0LBXN5XMXGQROWIPCOHCPPUPJ0CCZLC"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.383mil|Location2.X=3863.617mil|Location1.Y=1466.383mil|Location2.Y=1593.617mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.383mil|Location2.X=3863.617mil|Location1.Y=1466.383mil|Location2.Y=1593.617mil|Absolute=True">Hole Size Constraint: (3.2mm &gt; 2.54mm) Pad Free-0(66.04mm,7.62mm) on Multi-Layer Actual Hole Size = 3.2mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.383mil|Location2.X=3863.617mil|Location1.Y=2566.383mil|Location2.Y=2693.617mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.383mil|Location2.X=3863.617mil|Location1.Y=2566.383mil|Location2.Y=2693.617mil|Absolute=True">Hole Size Constraint: (3.2mm &gt; 2.54mm) Pad Free-0(66.04mm,35.56mm) on Multi-Layer Actual Hole Size = 3.2mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1686.383mil|Location2.X=1813.617mil|Location1.Y=1266.383mil|Location2.Y=1393.617mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1686.383mil|Location2.X=1813.617mil|Location1.Y=1266.383mil|Location2.Y=1393.617mil|Absolute=True">Hole Size Constraint: (3.2mm &gt; 2.54mm) Pad Free-0(13.97mm,2.54mm) on Multi-Layer Actual Hole Size = 3.2mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1736.383mil|Location2.X=1863.617mil|Location1.Y=3166.383mil|Location2.Y=3293.617mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1736.383mil|Location2.X=1863.617mil|Location1.Y=3166.383mil|Location2.Y=3293.617mil|Absolute=True">Hole Size Constraint: (3.2mm &gt; 2.54mm) Pad Free-0(15.24mm,50.8mm) on Multi-Layer Actual Hole Size = 3.2mm</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDUIB3CWCTOIPGKNYRVGUPHSNZJBAMB0UQMTABULM0ZRW2Y0MXLSKL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2023.902mil|Location2.X=2035.152mil|Location1.Y=2742.816mil|Location2.Y=2754.066mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2023.902mil|Location2.X=2035.152mil|Location1.Y=2742.816mil|Location2.Y=2754.066mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.197mm &lt; 0.254mm) Between Pad C1-2(21.82mm,39.37mm) on Top Layer And Pad C1-1(20.32mm,39.37mm) on Top Layer [Top Solder] Mask Sliver [0.197mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2023.902mil|Location2.X=2035.152mil|Location1.Y=2642.816mil|Location2.Y=2654.066mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2023.902mil|Location2.X=2035.152mil|Location1.Y=2642.816mil|Location2.Y=2654.066mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.197mm &lt; 0.254mm) Between Pad C2-2(21.82mm,36.83mm) on Top Layer And Pad C2-1(20.32mm,36.83mm) on Top Layer [Top Solder] Mask Sliver [0.197mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDQVOSVLSY135DPOWHHQKIGPDJRXGMG5YU15ROWP4Q5UDHKK5V3YJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1963.146mil|Location2.X=1974.396mil|Location1.Y=2265.178mil|Location2.Y=2276.428mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1963.146mil|Location2.X=1974.396mil|Location1.Y=2265.178mil|Location2.Y=2276.428mil|Absolute=True">Silk To Silk Clearance Constraint: (0.201mm &lt; 0.254mm) Between Text ".Designator" (20.269mm,26.01mm) on Top Overlay And Track (-5.563mm,26.391mm)(19.304mm,26.391mm) on Top Overlay Silk Text to Silk Clearance [0.201mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1963.062mil|Location2.X=1974.312mil|Location1.Y=2268.504mil|Location2.Y=2279.754mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1963.062mil|Location2.X=1974.312mil|Location1.Y=2268.504mil|Location2.Y=2279.754mil|Absolute=True">Silk To Silk Clearance Constraint: (0.187mm &lt; 0.254mm) Between Text ".Designator" (20.269mm,26.01mm) on Top Overlay And Track (19.304mm,26.391mm)(19.304mm,40.919mm) on Top Overlay Silk Text to Silk Clearance [0.187mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

@@ -1,0 +1,52 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Ecto1\Documents\GitHub\-Embedded-systems-\ESPshield\ArduinoUnoShield.PcbDoc
+Date     : 2/28/2017
+Time     : 9:28:28 AM
+
+Processing Rule : Clearance Constraint (Gap=0.102mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.102mm) (Max=1.27mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+   Violation between Hole Size Constraint: (3.2mm > 2.54mm) Pad Free-0(66.04mm,7.62mm) on Multi-Layer Actual Hole Size = 3.2mm
+   Violation between Hole Size Constraint: (3.2mm > 2.54mm) Pad Free-0(66.04mm,35.56mm) on Multi-Layer Actual Hole Size = 3.2mm
+   Violation between Hole Size Constraint: (3.2mm > 2.54mm) Pad Free-0(13.97mm,2.54mm) on Multi-Layer Actual Hole Size = 3.2mm
+   Violation between Hole Size Constraint: (3.2mm > 2.54mm) Pad Free-0(15.24mm,50.8mm) on Multi-Layer Actual Hole Size = 3.2mm
+Rule Violations :4
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (0.197mm < 0.254mm) Between Pad C1-2(21.82mm,39.37mm) on Top Layer And Pad C1-1(20.32mm,39.37mm) on Top Layer [Top Solder] Mask Sliver [0.197mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.197mm < 0.254mm) Between Pad C2-2(21.82mm,36.83mm) on Top Layer And Pad C2-1(20.32mm,36.83mm) on Top Layer [Top Solder] Mask Sliver [0.197mm]
+Rule Violations :2
+
+Processing Rule : Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+   Violation between Silk To Silk Clearance Constraint: (0.201mm < 0.254mm) Between Text ".Designator" (20.269mm,26.01mm) on Top Overlay And Track (-5.563mm,26.391mm)(19.304mm,26.391mm) on Top Overlay Silk Text to Silk Clearance [0.201mm]
+   Violation between Silk To Silk Clearance Constraint: (0.187mm < 0.254mm) Between Text ".Designator" (20.269mm,26.01mm) on Top Overlay And Track (19.304mm,26.391mm)(19.304mm,40.919mm) on Top Overlay Silk Text to Silk Clearance [0.187mm]
+Rule Violations :2
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 8
+Time Elapsed        : 00:00:01

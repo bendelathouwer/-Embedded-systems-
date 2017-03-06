@@ -1,0 +1,50 @@
+/*
+ * ESP8266.c
+ *
+ *  	 Created on: Nov 30, 2016
+ *      Author: Ben De Lathouwer
+ *      dit is work in progress libary voor de esp8266 op Een STM32 F7
+ *      er wordt niets opgeslagen in de flash van de esp8266
+ *
+ */
+#include "ESP8266.h"
+#include "stm32f7xx_hal.h"
+extern UART_HandleTypeDef huart7;
+
+
+
+void vActivety ( void )
+{
+	HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_SET);
+	HAL_Delay(125);
+	HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
+	HAL_Delay(125);
+
+}
+
+
+
+char* vTestModulle (void)
+{
+
+
+	int8_t usTestComand[480] = "AT/r/n";
+	HAL_UART_Transmit(&huart7,usTestComand,strlen(usTestComand),0);
+	HAL_Delay(2);
+	HAL_UART_Receive(&huart7,ESPBuffer,strlen(ESPBuffer),0);
+
+
+}
+
+void vResetModulle ( int iReset )
+{
+	int8_t usResetComand[480] = "AT+RST/r/n";
+	if( iReset == 1 )
+	{
+		HAL_UART_Transmit(&huart7,usResetComand,strlen(usResetComand),0);
+	}
+	else
+	{
+
+	}
+}
