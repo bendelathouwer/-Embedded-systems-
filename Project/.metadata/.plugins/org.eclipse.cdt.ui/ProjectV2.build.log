@@ -1,6 +1,7 @@
-08:24:42 **** Build of configuration Debug for project ProjectV2 ****
-make all 
-make: Nothing to be done for `all'.
+13:50:05 **** Clean-only build of configuration Debug for project ProjectV2 ****
+make clean 
+rm -rf *
+ 
 
-08:24:43 Build Finished (took 560ms)
+13:50:05 Build Finished (took 248ms)
 

@@ -4,7 +4,7 @@
   * Description        : Main program body
   ******************************************************************************
   *
-  * COPYRIGHT(c) 2016 STMicroelectronics
+  * COPYRIGHT(c) 2017 STMicroelectronics
   *
   * Redistribution and use in source and binary forms, with or without modification,
   * are permitted provided that the following conditions are met:
@@ -34,12 +34,11 @@
 #include "stm32f7xx_hal.h"
 
 /* USER CODE BEGIN Includes */
-#include <string.h>
-#include <stdlib.h>
+
 
 #include "main.h"
 #include "GUI.h"
-#include "ESP8266.h"
+
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -112,6 +111,7 @@ static void MX_USART1_UART_Init(void);
 static void MX_USART6_UART_Init(void);
 static void MX_USB_OTG_FS_HCD_Init(void);
 static void MX_USB_OTG_HS_HCD_Init(void);
+static void SystemClock_Config(void);
 
 void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
                 
@@ -121,7 +121,6 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 
 /* USER CODE END PFP */
 
-
 /* USER CODE BEGIN 0 */
 
 
@@ -130,9 +129,9 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 
 int main(void)
 {
+
   /* USER CODE BEGIN 1 */
-	uint16_t ulGraphValues [480];
-	uint32_t ulCounter = 480 ;
+
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -168,6 +167,7 @@ int main(void)
   MX_USART6_UART_Init();
   MX_USB_OTG_FS_HCD_Init();
   MX_USB_OTG_HS_HCD_Init();
+  SystemClock_Config();
 
   /* USER CODE BEGIN 2 */
 
@@ -177,32 +177,6 @@ int main(void)
 
   BSP_SDRAM_Init(); /* Initializes the SDRAM device */
   __HAL_RCC_CRC_CLK_ENABLE();
-  GUI_Init();
-  GUI_Clear();
-  GUI_SetFont(&GUI_Font20_1);
-  GUI_DispString("esp8266 visualisator\n");
-  GUI_SetBkColor(GUI_RED);
-  GUI_DispString("if errors check cabling and or power suply!\n");
-  float fBounderyX = GUI_GetScreenSizeX( );
- float fBounderyY = GUI_GetScreenSizeY( );
-  float fMidX = fBounderyX/2;
-  float fMidY = fBounderyY/2;
-
-  GUI_DispString("ScreenSizeX:\n");
-  GUI_DispDec(fBounderyX,3);
-  GUI_DispString("\n");
-  GUI_DispString("ScreenSizeY:\n");
-  GUI_DispDec(fBounderyY,3);
-  GUI_DispString("\n");
-  GUI_DispString("MidX:\n");
-  GUI_DispDec(fMidX,3);
-  GUI_DispString("\n");
-  GUI_DispString("fMidY:\n");
-  GUI_DispDec(fMidY,3);
-  HAL_Delay(5000);
-  GUI_SetBkColor(GUI_BLACK);
-  GUI_Clear();
-
 
 
 
@@ -219,20 +193,8 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-	  vActivety();
-	  GUI_Clear();
-	  GUI_DispString("grafiek:\n");
-	  GUI_DrawHLine( fMidY , 0 ,fBounderyX );
-	  for( ulCounter = 0 ; ulCounter < GUI_COUNTOF(ulGraphValues) ; ulCounter++ )
-	    {
-
-	  		ulGraphValues[ulCounter] = (rand() % 100 )*(-1)+50;
-
-	    }
-	    GUI_DrawGraph( ulGraphValues, GUI_COUNTOF(ulGraphValues) , 0, fMidY );
-
-
   }
+
   /* USER CODE END 3 */
 
 }
@@ -663,7 +625,7 @@ static void MX_SAI2_Init(void)
   hsai_BlockB2.Init.MonoStereoMode = SAI_STEREOMODE;
   hsai_BlockB2.Init.CompandingMode = SAI_NOCOMPANDING;
   hsai_BlockB2.Init.TriState = SAI_OUTPUT_NOTRELEASED;
-  hsai_BlockB2.FrameInit.FrameLength = 8;
+  hsai_BlockB2.FrameInit.FrameLength = 24;
   hsai_BlockB2.FrameInit.ActiveFrameLength = 1;
   hsai_BlockB2.FrameInit.FSDefinition = SAI_FS_STARTFRAME;
   hsai_BlockB2.FrameInit.FSPolarity = SAI_FS_ACTIVE_LOW;
@@ -1146,6 +1108,24 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
 
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(OTG_FS_PowerSwitchOn_GPIO_Port, OTG_FS_PowerSwitchOn_Pin, GPIO_PIN_SET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOI, ARDUINO_D7_Pin|ARDUINO_D8_Pin|LED_Pin|LCD_DISP_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(LCD_BL_CTRL_GPIO_Port, LCD_BL_CTRL_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(DCMI_PWR_EN_GPIO_Port, DCMI_PWR_EN_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOG, ARDUINO_D4_Pin|ARDUINO_D2_Pin|EXT_RST_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOF, ENABLE_Pin|LAOUT_Pin, GPIO_PIN_RESET);
+
   /*Configure GPIO pin : OTG_HS_OverCurrent_Pin */
   GPIO_InitStruct.Pin = OTG_HS_OverCurrent_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
@@ -1291,24 +1271,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.Alternate = GPIO_AF5_SPI2;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(OTG_FS_PowerSwitchOn_GPIO_Port, OTG_FS_PowerSwitchOn_Pin, GPIO_PIN_SET);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOI, ARDUINO_D7_Pin|ARDUINO_D8_Pin|LED_Pin|LCD_DISP_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(LCD_BL_CTRL_GPIO_Port, LCD_BL_CTRL_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(DCMI_PWR_EN_GPIO_Port, DCMI_PWR_EN_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOG, ARDUINO_D4_Pin|ARDUINO_D2_Pin|EXT_RST_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOF, ENABLE_Pin|LAOUT_Pin, GPIO_PIN_RESET);
 
 }
 
